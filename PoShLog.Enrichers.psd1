@@ -36,7 +36,7 @@ It contains lot of helpful enricher methods, useful with enriching log messages.
 For documentation check PoShLog wiki - https://github.com/TomasBouda/PoShLog/wiki'
 
 # Minimum version of the PowerShell engine required by this module
-PowerShellVersion = '5.1'
+PowerShellVersion = '3.0'
 
 # Name of the PowerShell host required by this module
 # PowerShellHostName = ''
