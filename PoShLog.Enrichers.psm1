@@ -3,15 +3,17 @@ Get-ChildItem -Path "$PSScriptRoot\functions" -Recurse -File -Filter '*.ps1' | F
 	. $_.FullName
 
 	# Export all functions except internal
-	if ($_.FullName -notcontains 'internal') {
+	if ($_.FullName -notlike '*\internal\*') {
 		Export-ModuleMember $_.BaseName
 	}
 }
 
 # Load all package dlls
 try {
-	Get-ChildItem $Global:packagesPath | Where-Object { $_.Name -like '*.dll' } | ForEach-Object { Add-Type -Path $_ -ErrorAction Stop }
+	foreach ($path in (Get-ChildItem "$PSScriptRoot\lib" | Where-Object { $_.Name -like '*.dll' } | Select-Object -ExpandProperty FullName)){
+		Add-Type -Path $path -ErrorAction Stop
+	}
 }
 catch {
-	Write-Error ($_.Exception.GetBaseException().LoaderExceptions | Format-Table | Out-String)
+	Write-Error $_.Exception
 }

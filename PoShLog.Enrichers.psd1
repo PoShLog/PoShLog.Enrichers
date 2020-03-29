@@ -31,9 +31,9 @@ Copyright = '(c) 2019 Tomas Bouda. All rights reserved.'
 
 # Description of the functionality provided by this module
 Description = 'PoShLog.Enrichers is extension module for PoShLog core library - https://www.powershellgallery.com/packages/PoShLog.
-It contains lot of helpful enricher methods, useful with enriching log messages.
+It contains lot of helpful enricher methods, useful when enriching log messages.
 
-For documentation check PoShLog wiki - https://github.com/TomasBouda/PoShLog/wiki'
+For documentation check PoShLog wiki - https://github.com/PoShLog/PoShLog/wiki'
 
 # Minimum version of the PowerShell engine required by this module
 PowerShellVersion = '5.1'
@@ -54,8 +54,7 @@ PowerShellVersion = '5.1'
 # ProcessorArchitecture = ''
 
 # Modules that must be imported into the global environment prior to importing this module
-RequiredModules = @('PoShLog', 
-               @{ModuleName = 'PoShLog'; GUID = '6eabf344-4f00-4cc0-95d4-d3bef503e165'; ModuleVersion = '2.0.0'; })
+RequiredModules = @(@{ModuleName = 'PoShLog'; GUID = '6eabf344-4f00-4cc0-95d4-d3bef503e165'; ModuleVersion = '2.0.0'; })
 
 # Assemblies that must be loaded prior to importing this module
 # RequiredAssemblies = @()
@@ -102,13 +101,13 @@ PrivateData = @{
         Tags = 'enrichment','enrichers','Log','Logging','Serilog','File','filelog','logfile','error-log','console','event','serilog-sink','serilog-for-powershell','wrapper','sinks','PSEdition_Desktop','PSEdition_Core','Windows','Linux','MacOS'
 
         # A URL to the license for this module.
-        LicenseUri = 'https://github.com/TomasBouda/PoShLog.Enrichers/blob/master/LICENSE'
+        LicenseUri = 'https://github.com/PoShLog/PoShLog.Enrichers/blob/master/LICENSE'
 
         # A URL to the main website for this project.
-        ProjectUri = 'https://github.com/TomasBouda/PoShLog.Enrichers'
+        ProjectUri = 'https://github.com/PoShLog/PoShLog.Enrichers'
 
         # A URL to an icon representing this module.
-        # IconUri = ''
+        IconUri = 'https://raw.githubusercontent.com/PoShLog/PoShLog/master/images/icons/poshlog-icon-enricher-256.png'
 
         # ReleaseNotes of this module
         ReleaseNotes = 'Init'
