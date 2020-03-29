@@ -2,7 +2,7 @@
 
 [![psgallery](https://img.shields.io/powershellgallery/v/PoShLog.Enrichers.svg)](https://www.powershellgallery.com/packages/PoShLog.Enrichers) [![PowerShell Gallery](https://img.shields.io/powershellgallery/p/PoShLog.Enrichers?color=blue)](https://www.powershellgallery.com/packages/PoShLog.Enrichers) [![psgallery](https://img.shields.io/powershellgallery/dt/PoShLog.Enrichers.svg)](https://www.powershellgallery.com/packages/PoShLog.Enrichers) [![Discord](https://img.shields.io/discord/693754316305072199?color=orange&label=discord)](https://discord.gg/6USF98)
 
-PoShLog.Enrichers is extension module for [PoShLog](https://github.com/PoShLog/PoShLog) logging module.
+PoShLog.Enrichers is extension module for [PoShLog](https://github.com/PoShLog/PoShLog) logging module. Contains lot of helpful enricher methods, useful when enriching log messages with more properties.
 
 ## Getting started
 
