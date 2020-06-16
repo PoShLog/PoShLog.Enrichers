@@ -25,13 +25,19 @@ Import-Module PoShLog.Enrichers
 New-Logger |
     Add-EnrichWithEnvironment |
     Add-EnrichWithExceptionDetails |
-    Add-SinkConsole -OutputTemplate "[{EnvironmentUserName}{MachineName} {Timestamp:HH:mm:ss} {Level:u3}] {Message:lj}{NewLine}{Exception}" |
+    Add-SinkConsole -OutputTemplate "[{MachineName} {Timestamp:HH:mm:ss} {Level:u3}] {Message:lj}{NewLine}{Exception}" |
     Start-Logger
 
 Write-InfoLog 'Hurrray, my first log message!'
 
 # Don't forget to close the logger
 Close-Logger
+```
+
+Outputs(*Notice the machine name added automatically*):
+
+```
+[DESKTOP-PQ6409S 11:16:20 INF] Hurrray, my first log message!
 ```
 
 ### Documentation
