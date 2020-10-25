@@ -39,6 +39,12 @@ Outputs(*Notice the machine name added automatically*):
 ```
 [DESKTOP-PQ6409S 11:16:20 INF] Hurrray, my first log message!
 ```
+### All cmdlets
+
+* [**Add-EnrichWithEnvironment**](https://github.com/PoShLog/PoShLog/wiki/Add-EnrichWithEnvironment) - Adds `MachineName` and `EnvironmentUserName` properties to log events
+* [**Add-EnrichWithExceptionDetails**](https://github.com/PoShLog/PoShLog/wiki/Add-EnrichWithExceptionDetails) - Adds additional structured properties from exceptions into log events
+* [**Add-EnrichWithProcessId**](https://github.com/PoShLog/PoShLog/wiki/Add-EnrichWithProcessId) - Enriches log events with current `ProcessId` property
+* [**Add-EnrichWithProcessName**](https://github.com/PoShLog/PoShLog/wiki/Add-EnrichWithProcessName) - Enriches log events with current `ProcessName` property
 
 ### Documentation
 
